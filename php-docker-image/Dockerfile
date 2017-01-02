@@ -63,6 +63,7 @@ EXPOSE 9999
 # USER AND VOLUME
 #
 USER phpworker
+ENV ENVIRONMENT local
 VOLUME ["/phpapp/www"]
 VOLUME ["/phpapp/data"]
 

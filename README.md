@@ -24,10 +24,21 @@ docker run \
     almightyphp composer update -vvv
 
 #
-# RUN APACHE2 HTTPD SERVER
+# RUN APACHE2 HTTPD SERVER (Environment local is default)
 #
 docker run \
     -i -t \
+    -p 8899:9999 \
+    -v $(pwd)/php-demo-app/:/phpapp/www \
+    -v $(pwd)/php-data-dir/:/phpapp/data \
+    almightyphp
+    
+#
+# OR RUN WITH STAGING ENVIRONMENT
+#
+docker run \
+    -i -t \
+    -E ENVIRONMENT=staging
     -p 8899:9999 \
     -v $(pwd)/php-demo-app/:/phpapp/www \
     -v $(pwd)/php-data-dir/:/phpapp/data \
