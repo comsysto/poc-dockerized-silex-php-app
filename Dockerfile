@@ -38,8 +38,10 @@ RUN ln -sf /dev/stderr /var/log/apache2/error.log && \
     curl -o /usr/bin/composer -J -L https://getcomposer.org/download/1.3.0/composer.phar && \
     chmod +x /usr/bin/composer && \
     addgroup -g 10777 phpworker && \
-    adduser -D -G phpworker -u 10777 phpworker && \
-    mkdir -p /phpapp/www && mkdir -p /phpapp/data && \
+    adduser -h /phpapp/ -H -D -G phpworker -u 10777 phpworker && \
+    mkdir -p /phpapp/www && \
+    mkdir -p /phpapp/data && \
+    mkdir -p /phpapp/.composer && \
     chown -R phpworker:phpworker /phpapp/ && \
     chown -R phpworker:phpworker /var/www/logs && \
     touch /var/www/logs/error.log && chown -R phpworker:phpworker /var/www/logs/error.log && \
@@ -66,6 +68,7 @@ USER phpworker
 ENV ENVIRONMENT local
 VOLUME ["/phpapp/www"]
 VOLUME ["/phpapp/data"]
+VOLUME ["/phpapp/.composer"]
 
 #
 # DEFAULT CMD START APACHE

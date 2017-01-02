@@ -5,31 +5,38 @@ poc-dockerized-silex-php-app
 
 ### Usage
 
+Building the docker image `almightyphp`
+
 ```
-#
-# BUILD DOCKER IMAGE
-#
-cd php-docker-image
+git clone https://github.com/comsysto/poc-dockerized-silex-php-app.git ~/poc-dockerized-silex-php-app
+cd ~/poc-dockerized-silex-php-app/
 docker build -t almightyphp .
+```
+
+----
+
+Install Application dependencies with composer
 
 
-#
-# INSTALL DEPENENCIED WITH COMPOSER (this might take some time)
-#
-cd ..
+```
 docker run \
     -i -t \
     -v $(pwd)/php-demo-app/:/phpapp/www \
+    -v $(pwd)/php-composer-home/:/phpapp/.composer \
     -v $(pwd)/php-data-dir/:/phpapp/data \
     almightyphp composer update -vvv
+```
 
-#
-# RUN APACHE2 HTTPD SERVER (Environment local is default)
-#
+----
+
+Run Application with Apache 2 HTTP Server and PHP7 with Environment `local`
+
+```
 docker run \
     -i -t \
     -p 8899:9999 \
     -v $(pwd)/php-demo-app/:/phpapp/www \
+    -v $(pwd)/php-composer-home/:/phpapp/.composer \
     -v $(pwd)/php-data-dir/:/phpapp/data \
     almightyphp
     
@@ -41,6 +48,7 @@ docker run \
     -E ENVIRONMENT=staging
     -p 8899:9999 \
     -v $(pwd)/php-demo-app/:/phpapp/www \
+    -v $(pwd)/php-composer-home/:/phpapp/.composer \
     -v $(pwd)/php-data-dir/:/phpapp/data \
     almightyphp
 ```
