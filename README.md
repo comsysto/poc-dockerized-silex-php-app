@@ -36,6 +36,15 @@ docker run \
 
 Now open Browser and goto http://localhost:8899/
 
+The Image size is around 50MB
+
+```
+docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+almightyphp         latest              d1f73902aa78        27 minutes ago      50.95 MB
+```
+
+
 ### License
 
   * Licensed under [MIT License](./LICENSE.md)
