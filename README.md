@@ -36,7 +36,9 @@ docker run \
 
 Now open Browser and goto http://localhost:8899/
 
-The Image size is around 50MB
+-----
+
+The Image size is around 50MB with Apache2 HTTP-Server, PHP7 and Composer pre-installed:
 
 ```
 docker images
