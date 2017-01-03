@@ -1,10 +1,10 @@
-<img align="right" src="https://media.comsysto.com/images/2017-01-02-docker/opengraph.png" width="300" />
+[<img align="right" src="https://media.comsysto.com/images/2017-01-02-docker/opengraph.png" width="300" />](https://comsysto.com/blog-post/docker-sicher-und-schlank-einsetzen-mit-grsecurity-apparmor-non-root-environments-und-host-firewall)
 
 # DOCKER SICHER UND <br> SCHLANK EINSETZEN
 
 Praktische Tipps für sichere Docker Container mit Grsecurity, AppArmor, non-root Environments und Host-Firewall.
 
-Praxisbeispiel zum BlogPost: Universelles Docker-Image für PHP Silex Anwendung.
+Praxisbeispiel zum [BlogPost](https://comsysto.com/blog-post/docker-sicher-und-schlank-einsetzen-mit-grsecurity-apparmor-non-root-environments-und-host-firewall): Universelles Docker-Image für PHP Silex Anwendung.
 
 ----
 
