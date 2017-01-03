@@ -3,18 +3,6 @@
   "license": "MIT",
   "type": "project",
   "require": {
-    "silex/silex": "~2.0",
-    "doctrine/dbal": "~2.2",
-    "monolog/monolog": "^1.22",
-    "fightbulc/moment": "^1.25",
-    "symfony/security": "^3.2",
-    "twig/twig": "^1.30",
-    "symfony/twig-bridge": "^3.2"
-  },
-  "require-dev": {
-  },
-  "scripts": {
-  },
-  "extra": {
+    "silex/silex": "~2.0"
   }
 }
