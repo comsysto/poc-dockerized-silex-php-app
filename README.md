@@ -2,7 +2,7 @@
 
 Praxisbeispiel: Universelles Docker-Image für PHP Silex Anwendung zum BlogPost
 
-![](https://media.comsysto.com/images/2017-01-02-docker/opengraph.png)
+<img src="https://media.comsysto.com/images/2017-01-02-docker/opengraph.png" width="300" />
 
 
 ### Usage
