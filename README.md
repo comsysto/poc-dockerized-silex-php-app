@@ -8,9 +8,9 @@ Praxisbeispiel zum BlogPost: Universelles Docker-Image für PHP Silex Anwendung.
 
 ----
 
-### Usage
+### Benutzung
 
-Building the docker image `almightyphp`
+Bauen des Docker-Images `almightyphp`
 
 ```
 git clone https://github.com/comsysto/poc-dockerized-silex-php-app.git ~/poc-dockerized-silex-php-app
@@ -20,8 +20,7 @@ docker build -t almightyphp .
 
 ----
 
-Install Application dependencies with composer
-
+Installation von PHP Abhängigkeiten mit [Composer](https://getcomposer.org/)
 
 ```
 docker run \
@@ -34,7 +33,7 @@ docker run \
 
 ----
 
-Run Application with Apache 2 HTTP Server and PHP7 with Environment `local`
+Starte die PHP Applikation mit Apache 2 Webserver und PHP7 mit Environment `local`
 
 ```
 docker run \
@@ -44,10 +43,14 @@ docker run \
     -v $(pwd)/php-composer-home/:/phpapp/.composer \
     -v $(pwd)/php-data-dir/:/phpapp/data \
     almightyphp
-    
-#
-# OR RUN WITH STAGING ENVIRONMENT
-#
+    
+```
+
+-----
+
+Starte die PHP Applikation mit Apache 2 Webserver und PHP7 mit Environment `staging`
+
+```
 docker run \
     -i -t \
     -E ENVIRONMENT=staging
@@ -62,7 +65,7 @@ Now open Browser and goto http://localhost:8899/
 
 -----
 
-The Image size is around 50MB with Apache2 HTTP-Server, PHP7 and Composer pre-installed:
+Das Image ist ca 50MB groß, würde man es auf Docker Hub publishen sicherlich nur die hälfte wegen der Kompression.
 
 ```
 docker images
@@ -70,6 +73,7 @@ REPOSITORY          TAG                 IMAGE ID            CREATED             
 almightyphp         latest              d1f73902aa78        27 minutes ago      50.95 MB
 ```
 
+----
 
 ### License
 
