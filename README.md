@@ -2,10 +2,13 @@
 
 # poc-dockerized-silex-php-app
 
-Praxisbeispiel: Universelles Docker-Image für PHP Silex Anwendung zum BlogPost
+Praxisbeispiel: Universelles Docker-Image für PHP Silex Anwendung zum BlogPost.
+
+**DOCKER SICHER UND SCHLANK EINSETZEN**
+Praktische Tipps für sichere Docker Container mit Grsecurity, AppArmor, non-root Environments und Host-Firewall.
 
 
-
+----
 
 ### Usage
 
