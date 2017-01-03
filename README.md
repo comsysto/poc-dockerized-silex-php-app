@@ -1,12 +1,10 @@
-<img style="float:right" src="https://media.comsysto.com/images/2017-01-02-docker/opengraph.png" width="300" />
+<img align="right" src="https://media.comsysto.com/images/2017-01-02-docker/opengraph.png" width="300" />
 
-# poc-dockerized-silex-php-app
+# DOCKER SICHER UND SCHLANK EINSETZEN
 
-Praxisbeispiel: Universelles Docker-Image für PHP Silex Anwendung zum BlogPost.
-
-**DOCKER SICHER UND SCHLANK EINSETZEN**
 Praktische Tipps für sichere Docker Container mit Grsecurity, AppArmor, non-root Environments und Host-Firewall.
 
+Praxisbeispiel zum BlogPost: Universelles Docker-Image für PHP Silex Anwendung.
 
 ----
 
