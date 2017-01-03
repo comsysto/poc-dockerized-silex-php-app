@@ -1,7 +1,6 @@
 <img align="right" src="https://media.comsysto.com/images/2017-01-02-docker/opengraph.png" width="300" />
 
-# DOCKER SICHER UND 
-# SCHLANK EINSETZEN
+# DOCKER SICHER UND <br> SCHLANK EINSETZEN
 
 Praktische Tipps für sichere Docker Container mit Grsecurity, AppArmor, non-root Environments und Host-Firewall.
 
