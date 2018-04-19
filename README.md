@@ -4,7 +4,7 @@
 
 Praktische Tipps für sichere Docker Container mit Grsecurity, AppArmor, non-root Environments und Host-Firewall.
 
-Praxisbeispiel zum [BlogPost](https://comsysto.com/blog-post/docker-sicher-und-schlank-einsetzen-mit-grsecurity-apparmor-non-root-environments-und-host-firewall): Universelles Docker-Image für PHP Silex Anwendung.
+Praxisbeispiel zum [BlogPost](https://comsysto.com/blog-post/docker-sicher-und-schlank-einsetzen-mit-grsecurity-apparmor-non-root-environments-und-host-firewall-part-1): Universelles Docker-Image für PHP Silex Anwendung.
 
 ----
 
