@@ -1,4 +1,4 @@
-[<img align="right" src="https://media.comsysto.com/images/2017-01-02-docker/opengraph.png" width="300" />](https://comsysto.com/blog-post/docker-sicher-und-schlank-einsetzen-mit-grsecurity-apparmor-non-root-environments-und-host-firewall)
+[<img align="right" src="https://media.comsysto.com/images/2017-01-02-docker/opengraph.png" width="300" />](https://comsysto.com/blog-post/docker-sicher-und-schlank-einsetzen-mit-grsecurity-apparmor-non-root-environments-und-host-firewall-part-1)
 
 # DOCKER SICHER UND <br> SCHLANK EINSETZEN
 
